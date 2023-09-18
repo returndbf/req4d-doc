@@ -12,7 +12,7 @@ nav:
 
 注意： req4d使用**esm**：
 
-```import { reqComponent } from "req4d"```
+```import { ReqComponent } from "req4d"```
 
 ## 使用```@ReqComponent```标记一个类为请求类
 
