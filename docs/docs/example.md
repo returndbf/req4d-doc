@@ -14,10 +14,10 @@ nav:
 
 ```import { ReqComponent } from "req4d"```
 
-## 使用```@ReqComponent```标记一个类为请求类
+## 使用```@ReqComponent```标记一个类为请求类（参数为对象，与axios创建实例的参数一致）
 
 ```typescript
-@ReqComponent(baseUrl = "http://example.com")
+@ReqComponent({baseURL : "http://example.com"})
 class User {
 
 }
@@ -26,7 +26,7 @@ class User {
 ## 使用```@Get```标记方法需要进行get请求
 
 ```typescript
-@ReqComponent(baseUrl = "http://example.com")
+@ReqComponent({baseURL : "http://example.com"})
 class User {
   @Get('/user')
   async getUser(): ReqReturnType<UserType> {
@@ -39,9 +39,9 @@ class User {
 ## 使用请求后的数据
 
 ```typescript
-const userInstance = new User();
+const userReq = new User();
 
-userInstance.getUser().then((user) => {
+userReq.getUser().then((user) => {
   //do something
 })
 ```
