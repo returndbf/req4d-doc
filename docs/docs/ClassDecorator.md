@@ -1,5 +1,5 @@
 ---
-title: Class装饰器
+title: 类装饰器
 order: 1
 group:
   title: 装饰器
